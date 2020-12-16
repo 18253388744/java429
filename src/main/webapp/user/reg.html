@@ -42,9 +42,9 @@
     <div class="layui-form-item">
       <label class="layui-form-label">单选框</label>
       <div class="layui-input-block">
-        <input type="radio" name="sex" value="1" title="男" checked="">
-        <input type="radio" name="sex" value="2" title="女">
-        <input type="radio" name="sex" value="禁" title="禁用" disabled="">
+        <input type="radio"  name="sex" value="1" title="男" checked="">
+        <input type="radio"  name="sex" value="2" title="女">
+        <input type="radio"  name="sex" value="3" title="禁用" disabled="">
       </div>
     </div>
 
@@ -83,11 +83,12 @@
       var $ = layui.$;
       var phone = document.getElementById("phone").value;
       var mima =document.getElementById("mima").value;
+      var sex =$('input:radio:checked').val();
       var username =document.getElementById("username").value;
       var data =document.getElementById("date").value;
       if (phone!=""&&mima!=""&&username!=""&&data!=""){
         $.ajax({
-          url:'user?do=add&phone='+phone+'&mima='+mima+'&username='+username+'&data='+data,
+          url:'user?do=add&phone='+phone+'&mima='+mima+'&username='+username+'&sex='+sex+'&data='+data,
           methods:'post',
           success:function (data1) {
              if (data1==1){
