@@ -1,5 +1,11 @@
 package com.wdsjol.servlet;
 
+import com.wdsjol.config.SpringConfig;
+import com.wdsjol.service.StudentListService;
+import com.wdsjol.service.impl.UserServiceImpl;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,17 +21,17 @@ public class UserServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String phone = request.getParameter("do");
-        if ("add".equals(phone)){
+        String dos = request.getParameter("do");
+        if ("add".equals(dos)){
+            String phone = request.getParameter("phone");
             String mima = request.getParameter("mima");
             String username = request.getParameter("username");
+            String sex = request.getParameter("sex");
             String data = request.getParameter("data");
             PrintWriter out = response.getWriter();
-            if (mima.equals("123")){
-                out.print(1);
-            }else {
-                out.print(0);
-            }
+            ApplicationContext app = new AnnotationConfigApplicationContext(SpringConfig.class);
+            UserServiceImpl bean = app.getBean(UserServiceImpl.class);
+            out.print(bean.add(phone,mima,username,sex,data));
 
         }
     }
