@@ -2,6 +2,7 @@ com\wdsjol\entity\Zy.class
 com\wdsjol\entity\TeacherUser.class
 com\wdsjol\dao\impl\StudentUserDAOImpl.class
 com\wdsjol\servlet\TestServlet.class
+com\wdsjol\servlet\UserServlet.class
 com\wdsjol\dao\impl\ClassDaoImpl.class
 com\wdsjol\service\impl\ZyCzServiceImpl.class
 com\wdsjol\dao\impl\ZyDaoImpl.class

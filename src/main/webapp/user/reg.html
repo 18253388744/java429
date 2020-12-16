@@ -87,11 +87,11 @@
       var data =document.getElementById("date").value;
       if (phone!=""&&mima!=""&&username!=""&&data!=""){
         $.ajax({
-          url:'user?do=add?phone='+phone+'&mima='+mima+'&username='+username+'&data='+data,
+          url:'user?do=add&phone='+phone+'&mima='+mima+'&username='+username+'&data='+data,
           methods:'post',
           success:function (data1) {
              if (data1==1){
-               alert(1)
+               layer.msg('注册成功');
                var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
                parent.layer.close(index); //再执行关闭
              }else{
