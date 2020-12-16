@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0534b74b-155b-490e-ba84-1279d089ff50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wdsjol/servlet/IndexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wdsjol/servlet/IndexServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wdsjol/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wdsjol/servlet/UserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-12-16" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-12-16" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608109294783</updated>
-      <workItem from="1608109295909" duration="17802000" />
+      <workItem from="1608109295909" duration="17996000" />
     </task>
     <task id="LOCAL-00001" summary="轮播图">
       <created>1608109530644</created>
@@ -244,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608129819186</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="完成用户登陆">
+      <created>1608130752262</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1608130752262</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +292,8 @@
     <MESSAGE value="增加新用户注册" />
     <MESSAGE value="增加新用户注册完成" />
     <MESSAGE value="增加用户登陆" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加用户登陆" />
+    <MESSAGE value="完成用户登陆" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成用户登陆" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1608113468454">
@@ -307,10 +312,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608124761929" />
-    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1608129818571">
+    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1608130751612">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608129818571" />
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608130751612" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1608113449178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -319,30 +324,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="760" y="404" width="273" height="219" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608110981392" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1608130111663">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1608130809176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608130111663" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1608130111663">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608130809176" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1608130809176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608130111663" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1608130111662">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608130809176" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1608130809176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608130111662" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1608130111663">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608130809176" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1608130809176">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608130111663" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608130809176" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1608113384210">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608113384210" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608129827010">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608130776820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608129827010" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608130776820" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608113306006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -351,9 +356,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="92" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1608126861259" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1608130111678">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1608130809195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608130111678" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608130809195" />
   </component>
 </project>
