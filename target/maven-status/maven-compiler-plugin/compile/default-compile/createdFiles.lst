@@ -1,6 +1,7 @@
 com\wdsjol\entity\Zy.class
 com\wdsjol\entity\TeacherUser.class
 com\wdsjol\dao\impl\StudentUserDAOImpl.class
+com\wdsjol\dao\impl\UserDaoImpl.class
 com\wdsjol\servlet\TestServlet.class
 com\wdsjol\servlet\UserServlet.class
 com\wdsjol\dao\impl\ClassDaoImpl.class
@@ -12,6 +13,8 @@ com\wdsjol\dto\StudentListDto.class
 com\wdsjol\service\StuCzService.class
 com\wdsjol\servlet\StudentListServlet.class
 com\wdsjol\dto\LayuiJson.class
+com\wdsjol\service\impl\UserServiceImpl.class
+com\wdsjol\service\UserService.class
 com\wdsjol\servlet\admin\AdminExitServlet.class
 com\wdsjol\service\impl\LoginServiceImpl.class
 com\wdsjol\dao\StudentUserDAO.class
@@ -40,6 +43,7 @@ com\wdsjol\service\impl\StuCzServiceImpl.class
 com\wdsjol\service\impl\SetPassworldServiceImpl.class
 com\wdsjol\service\ClassCzService.class
 com\wdsjol\service\impl\StudentListServiceImpl.class
+com\wdsjol\dao\UserDao.class
 com\wdsjol\service\LoginService.class
 com\wdsjol\servlet\admin\AdminInfoServlet.class
 com\wdsjol\dao\impl\UserTypeDaoImpl.class
@@ -47,6 +51,7 @@ com\wdsjol\dao\impl\TeacherUserDaoImpl.class
 com\wdsjol\servlet\ZyCzServlet.class
 com\wdsjol\service\impl\TestServiceImpl.class
 com\wdsjol\dao\ClasssDao.class
+com\wdsjol\entity\User.class
 com\wdsjol\dao\impl\AdminUserDaoImpl.class
 com\wdsjol\entity\Classs.class
 com\wdsjol\dao\impl\SexDaoImpl.class
