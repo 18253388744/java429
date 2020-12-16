@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layuiAdmin 网站用户</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../../../layuiadmin/layui/css/layui.css" media="all">
+  <link rel="stylesheet" href="../../../layuiadmin/style/admin.css" media="all">
+</head>
+<body>
+
+  <div class="layui-fluid">
+    <div class="layui-card">
+      <div class="layui-form layui-card-header layuiadmin-card-header-auto">
+        <div class="layui-form-item">
+          <div class="layui-inline">
+            <label class="layui-form-label">姓名</label>
+            <div class="layui-input-block">
+              <input type="text" id="id" name="id" placeholder="请输入" autocomplete="off" class="layui-input">
+            </div>
+          </div>
+          <div class="layui-inline">
+            <label class="layui-form-label">专业</label>
+            <div class="layui-input-block">
+              <select name="zy" id="zy">
+                <option value="">不限</option>
+              </select>
+            </div>
+          </div>
+          <div class="layui-inline">
+            <label class="layui-form-label">班级</label>
+            <div class="layui-input-block">
+              <select name="classname" id="classname">
+                <option value="">不限</option>
+              </select>
+            </div>
+          </div>
+          <div class="layui-inline">
+            <label class="layui-form-label">性别</label>
+            <div class="layui-input-block">
+              <select name="sex" id="sex">
+                <option value="">不限</option>
+                <option value="1">男</option>
+                <option value="2">女</option>
+              </select>
+            </div>
+          </div>
+          <div class="layui-inline">
+            <button class="layui-btn layuiadmin-btn-useradmin" id="do_search">
+              <i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="layui-card-body">
+        <div style="padding-bottom: 10px;">
+          <button class="layui-btn layuiadmin-btn-useradmin" data-type="add" onclick="adduser()">添加</button>
+        </div>
+
+              <table class="layui-table" lay-data="{url:'studentList', id:'test'}" lay-filter="test" id="test">
+                <thead>
+                <tr>
+                  <th lay-data="{field:'id', width:100, sort: true}">ID</th>
+                  <th lay-data="{field:'name', width:150, sort: true}">姓名</th>
+                  <th lay-data="{field:'sex', width:100, sort: true, edit: 'text'}">性别</th>
+                  <th lay-data="{field:'className', minWidth: 150}">班级</th>
+                  <th lay-data="{field:'zy', minWidth: 150}">专业</th>
+                  <th lay-data="{field:'birthday', minWidth: 100}">生日</th>
+                  <th lay-data="{field:'tel', minWidth: 100}">电话</th>
+                  <th lay-data="{field:'text', minWidth: 100}">备注</th>
+                  <th lay-data="{field:'right', toolbar: '#barDemo', width:80}">操作</th>
+                </tr>
+                </thead>
+              </table>
+
+        <script type="text/html" id="barDemo">
+          <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+        </script>
+
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="../../../layuiadmin/layui/layui.all.js"></script>
+  <script>
+    var XMLHttpRequestIns = null;
+    function CreateXMLHttpRequest() {
+      if (window.ActiveObject) {
+        XMLHttpRequestIns = new ActiveXObject("Microsoft.XMLHTTP");
+      }else if(window.XMLHttpRequest ) {
+        XMLHttpRequestIns = new XMLHttpRequest();
+      }
+    }
+    function handleStateChange() {
+      if (XMLHttpRequestIns.readyState == 4) {
+        if (XMLHttpRequestIns.status == 200) {
+          if(XMLHttpRequestIns.responseText==1){
+            layer.msg('删除成功');
+          }else{
+            layer.msg('删除失败');
+          }
+        }else {
+          alert(XMLHttpRequestIns.status);
+        }
+      }
+    }
+    layui.use('table', function(){
+      var table = layui.table;table.on('tool(test)', function(obj){
+        var data = obj.data;
+        if(obj.event === 'del'){
+          var sid = obj.data.id;
+
+
+          layer.confirm('真的删除行么', function(index){
+            CreateXMLHttpRequest();
+            XMLHttpRequestIns.onreadystatechange = handleStateChange;
+            XMLHttpRequestIns.open("POST", "stucz?cz=del&id="+sid, true);
+            XMLHttpRequestIns.send(null);
+            obj.del();
+            layer.close(index);
+          });
+        }
+
+      });
+    });
+
+function adduser(){
+  layui.use('table', function(){
+    table = layui.table;
+
+
+  layer.open({
+    type: 2
+    ,title: '添加用户'
+    ,content: 'userform.html'
+    ,maxmin: true
+    ,area: ['460px', '660px']
+    ,btn: ['确定', '取消']
+    ,yes: function(index, layero){
+      var iframeWindow = window['layui-layer-iframe'+ index]
+              ,submitID = 'LAY-user-front-submit'
+              ,submit = layero.find('iframe').contents().find('#'+ submitID);
+
+      $('.layui-btn').on('click', function(){
+        var type = $(this).data('type');
+        active[type] ? active[type].call(this) : '';
+      });
+
+      //监听提交
+      iframeWindow.layui.form.on('submit('+ submitID +')', function(data){
+        var field = data.field; //获取提交的字段
+        //提交 Ajax 成功后，静态更新表格中的数据
+        $.ajax({
+          url:'stucz?cz=add&name='+field.username+'&classid='+field.classname+'&zyid='+field.zy+'&tel='+field.phone+'&sexid='+field.sex+'&birthday='+field.date+'&text='+field.text,
+          methods:'post',
+          success:function () {
+            layer.msg('添加成功');
+            layer.close(index); //关闭弹层
+          },
+          error:function () {
+            layer.msg('添加失败');
+          }
+        });
+
+        layer.close(index); //关闭弹层
+      });
+      submit.trigger('click');
+    }
+  });
+  });
+}
+  </script>
+<script>
+    form = layui.form
+    table = layui.table;
+    // 执行搜索，表格重载
+    $('#do_search').on('click', function () {
+      // 搜索条件
+      var id = $('#id').val();
+      var classname = $('#classname').val();
+      var zy = $('#zy').val();
+      var sex = $('#sex').val();
+      table.reload('test', {
+        url:'studentList?cx=tj&name='+id+'&classname='+classname+'&zy='+zy+'&sex='+sex
+        , method: 'post'
+        , where: {
+          'name': id,
+          'classname': classname,
+          'zy': zy,
+          'sex': sex,
+        }
+      })
+    })
+
+    $.ajax({
+      url:'classcz?cz=getinfo',
+      methods:'post',
+      success:function (data1) {
+        obj = JSON.parse(data1);
+        for(j = 0; j < obj.length; j++) {
+          selectID = document.getElementById("classname");
+          option = document.createElement("option");// 创建option元素
+          option.appendChild(document.createTextNode(obj[j].classname));
+          option.setAttribute("value", obj[j].classid);
+          selectID.appendChild(option);
+        }
+        form.render('select'); //刷新select选择框渲染
+      },
+      error:function () {
+        layer.msg('获取信息失败');
+      }
+    });
+    $.ajax({
+      url:'zycz?cz=getinfo',
+      methods:'post',
+      success:function (data1) {
+        obj = JSON.parse(data1);
+        for(j = 0; j < obj.length; j++) {
+          selectID = document.getElementById("zy");
+          option = document.createElement("option");// 创建option元素
+          option.appendChild(document.createTextNode(obj[j].zy));
+          option.setAttribute("value", obj[j].zyid);
+          selectID.appendChild(option);
+        }
+        form.render('select'); //刷新select选择框渲染
+      }
+      ,error:function (data1) {
+        layer.msg('数据获取失败');
+      }
+    });
+
+</script>
+</body>
+</html>
