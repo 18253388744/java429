@@ -32,6 +32,7 @@ public class UserServiceImpl implements UserService {
     public User dl(String phone, String mina) {
         User user = userDao.dl(phone,mina);
         if (user!=null){
+
             return user;
         }else {
             return null;

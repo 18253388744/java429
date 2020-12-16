@@ -9,6 +9,7 @@ com\wdsjol\service\impl\ZyCzServiceImpl.class
 com\wdsjol\dao\impl\ZyDaoImpl.class
 com\wdsjol\service\TestService.class
 com\wdsjol\dto\AdminInfoDto.class
+com\wdsjol\servlet\IndexServlet.class
 com\wdsjol\dto\StudentListDto.class
 com\wdsjol\service\StuCzService.class
 com\wdsjol\servlet\StudentListServlet.class

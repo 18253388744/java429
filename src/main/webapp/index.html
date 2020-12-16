@@ -100,31 +100,50 @@
 <section class="banner-slide" data-report-module="banner">
 
     <div class="mod-entry">
-        <div class="mod-entry-user mod-entry-user--unlogin visible" id="js-mod-entry-index"><div class="mod-entry-user-hover mod-entry-nologin"> <p class="mod-entry-nologin-tips">欢迎登录</p> <div class="fullscreen-bg" style="background: url(images/login_bg.png);height: 20px;">
-        	
+        <div class="mod-entry-user mod-entry-user--unlogin visible" id="js-mod-entry-index">
+            <div class="mod-entry-user-hover mod-entry-nologin">
+                <p class="mod-entry-nologin-tips" style="margin-bottom: 15px;">欢迎登录</p>
+                <div class="login-box">
+                    <div class="login_inner">
+
+                        <!--登录错误提示消息-->
+
+                        <form id="loginForm" action="" method="post" accept-charset="utf-8">
+                            <p>
+                                    <input type="text" placeholder="请输入手机号" value="" name="username" id="phone"/>
+
+                                </p>
+                                <br>
+                                <p class="clearPassword-ico">
+                                    <input type="password" placeholder="请输入密码" value="" name="password"  id="mima" />
+                                </p>
+                                <br>
+                            <div class="submit_btn">
+                                <button type="button" onclick="zc()" style="width: 90px"  class="btn-default mod-entry-login js-login-op" >注册</button>
+                                <button type="button" onclick="dl()" style="width: 90px" class="btn-default mod-entry-login js-login-op" >登录</button>
+                            </div>
+                        </form>
+        	        </div>
+                </div>
+            </div>
         </div>
-        <div class="login-box">
-        	<div class="login_inner">
+    </div>
+    <div class="mod-entry" style="display: block">
+        <div class="mod-entry-user mod-entry-user--unlogin visible" id="js-mod-entry-index">
+            <div class="mod-entry-user-hover mod-entry-nologin">
+                <p class="mod-entry-nologin-tips" style="margin-bottom: 15px;">欢迎您，<a href="#">孙海翔</a></p>
+                <div class="login-box">
+                    <div class="login_inner">
+                        <h1></h1>
+                        <br>
+                        <a href="//ke.qq.com/user/index/index.html" report-attr="module=class_schedule&amp;position=card" class="mod-entry-user-schedule"> <i class="icon-font i-calendar-2"></i>我的信息 </a>
+                        <br>
+                        <a class="mod-entry-user-logout js-login-op" href="indexservlet?do=exit">退出登陆</a>
 
-				<!--登录错误提示消息-->
-        		<div id="errorMsg" class="alert alert-danger" ></div>
-				<form id="loginForm" action="" method="post" accept-charset="utf-8">
-        			<p>
-                            <input type="text" placeholder="请输入手机号" value="" name="username" id="phone"/>
-
-                        </p>
-						<br>
-                        <p class="clearPassword-ico">
-                            <input type="password" placeholder="请输入密码" value="" name="password"  id="mima" />
-                        </p>
-						<br>
-			<div class="submit_btn">
-        				<button type="button" onclick="zc()" style="width: 90px"  class="btn-default mod-entry-login js-login-op" >注册</button>
-        				<button type="button" onclick="dl()" style="width: 90px" class="btn-default mod-entry-login js-login-op" >登录</button>
-        			</div>
-        		</form>
-        	</div>
-        </div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <section>
@@ -781,6 +800,7 @@
     <script src="layuiadmin/layui/layui.js"></script>
     <script>
         layui.use(['carousel'], function(){
+            var $ = layui.$;
             var carousel = layui.carousel;
             //常规轮播
             carousel.render({
@@ -788,6 +808,17 @@
                 ,arrow: 'always'
                 ,height: '300px'
                 ,width:'100%'
+            });
+            $.ajax({
+                url:'indexservlet?do=dl',
+                methods:'post',
+                success:function (data1) {
+                    if (data1!=""){
+
+                    }
+                },error:function (data1) {
+                    layer.msg('数据获取失败');
+                }
             });
         });
 
