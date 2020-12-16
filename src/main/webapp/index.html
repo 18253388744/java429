@@ -110,12 +110,12 @@
         		<div id="errorMsg" class="alert alert-danger" ></div>
 				<form id="loginForm" action="" method="post" accept-charset="utf-8">
         			<p>
-                            <input type="text" placeholder="请输入账号" value="" name="username" id="username"/>
+                            <input type="text" placeholder="请输入手机号" value="" name="username" id="phone"/>
 
                         </p>
 						<br>
                         <p class="clearPassword-ico">
-                            <input type="password" placeholder="请输入密码" value="" name="password"  id="password" />
+                            <input type="password" placeholder="请输入密码" value="" name="password"  id="mima" />
                         </p>
 						<br>
 			<div class="submit_btn">
@@ -795,12 +795,12 @@
             layui.use('layer', function(){
                 var $ = layui.$;
                 var layer = layui.layer;
-                if (document.getElementById("username").value==""||document.getElementById("password").value==""){
+                if (document.getElementById("phone").value==""||document.getElementById("mima").value==""){
                         layer.msg('请填写完整信息');
 
                 }else{
                     $.ajax({
-                        url:'user?do=dl&phone='+phone+'&mima='+mima,
+                        url:'user/user?do=dl&phone='+document.getElementById('phone').value+'&mima='+document.getElementById('mima').value,
                         methods:'post',
                         success:function (data1) {
                             if (data1==1){
