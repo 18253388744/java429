@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0534b74b-155b-490e-ba84-1279d089ff50" name="Default Changelist" comment="修改">
+    <list default="true" id="0534b74b-155b-490e-ba84-1279d089ff50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-12-16" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-12-16" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +33,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -63,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608109294783</updated>
-      <workItem from="1608109295909" duration="3875000" />
+      <workItem from="1608109295909" duration="3948000" />
     </task>
     <task id="LOCAL-00001" summary="轮播图">
       <created>1608109530644</created>
@@ -107,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608113263391</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修改">
+      <created>1608113319173</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608113319173</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,10 +154,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608112208455" />
-    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1608113275607">
+    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1608113318709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608113275607" />
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608113318709" />
     <state x="760" y="404" width="273" height="219" key="Github.ShareDialog" timestamp="1608110981392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -172,10 +178,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608111819470" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1608109681384">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1608113384210">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608109681384" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608113384210" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608113306006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
