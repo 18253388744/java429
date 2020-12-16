@@ -1310,32 +1310,15 @@
             carousel.render({
                 elem: '#test1'
                 ,arrow: 'always'
+                ,height: '300px'
+                ,width:'100%'
             });
 
-            //改变下时间间隔、动画类型、高度
-            carousel.render({
-                elem: '#test2'
-                ,interval: 1800
-                ,anim: 'fade'
-                ,height: '120px'
-            });
+
 
             //设定各种参数
-            var ins3 = carousel.render({
-                elem: '#test3'
-            });
-            //图片轮播
-            carousel.render({
-                elem: '#test10'
-                ,width: '778px'
-                ,height: '440px'
-                ,interval: 5000
-            });
 
-            //事件
-            carousel.on('change(test4)', function(res){
-                console.log(res)
-            });
+
 
             var $ = layui.$, active = {
                 set: function(othis){
