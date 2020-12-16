@@ -45,6 +45,15 @@ public class UserDaoImpl implements UserDao {
             return null;
         }
     }
+    public User findByPhone(String phone) {
+        List<User> list = jdbcTemplate.query("select * from user where phone=?", new Object[]{phone}, new BeanPropertyRowMapper<User>(User.class));
+        if(list!=null && list.size()>0){
+            User user = list.get(0);
+            return user;
+        }else{
+            return null;
+        }
+    }
 
     @Override
     public List<User> findAllList(Map<String,Object> params) {

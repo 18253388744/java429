@@ -1,5 +1,6 @@
 package com.wdsjol.service.impl;
 
+import com.alibaba.druid.sql.visitor.functions.If;
 import com.wdsjol.dao.UserDao;
 import com.wdsjol.dao.impl.UserDaoImpl;
 import com.wdsjol.entity.User;
@@ -21,6 +22,10 @@ public class UserServiceImpl implements UserService {
         user.setUsername(username);
         user.setSex(Integer.parseInt(sex));
         user.setData(data);
+        if (userDao.findByPhone(phone)!=null){
+            return 0;
+        }
+
         return userDao.add(user);
     }
 }
