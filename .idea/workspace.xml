@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0534b74b-155b-490e-ba84-1279d089ff50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/1111s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/reg.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/logo192-3x_621b1c1fc1dd9a9eff1800acff237e5c.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/logo192-3x_621b1c1fc1dd9a9eff1800acff237e5c.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/logo_s_1cb6c6965ac595b2a54231d520386feb.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/logo_s_1cb6c6965ac595b2a54231d520386feb.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-12-16" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2020-12-16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/user/reg.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608109294783</updated>
-      <workItem from="1608109295909" duration="8118000" />
+      <workItem from="1608109295909" duration="9418000" />
     </task>
     <task id="LOCAL-00001" summary="轮播图">
       <created>1608109530644</created>
@@ -141,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608115109608</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="增加新用户注册">
+      <created>1608121078690</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608121078690</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +183,8 @@
     <MESSAGE value="轮播图" />
     <MESSAGE value="修改" />
     <MESSAGE value="更新新功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新新功能" />
+    <MESSAGE value="增加新用户注册" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加新用户注册" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Notifications" timestamp="1608113468454">
@@ -193,10 +195,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608112208455" />
-    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1608121071870">
+    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1608121078052">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608121071870" />
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608121078052" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1608113449178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -225,10 +227,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1608113384210" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608115122706">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608121109670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608115122706" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608121109670" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608113306006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
