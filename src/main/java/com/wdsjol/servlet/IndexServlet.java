@@ -18,12 +18,17 @@ public class IndexServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.setCharacterEncoding("utf-8");
+        response.setCharacterEncoding("utf-8");
         PrintWriter out = response.getWriter();
         if ("dl".equals( request.getParameter("do"))){
             HttpSession session = request.getSession();
-            User user =(User)session.getAttribute("user");
-            out.print(user.getUsername());
+            if (session.getAttribute("user") != null) {
+                User user =(User)session.getAttribute("user");
+                out.print(user.getUsername());
+            }else {
+                out.print(0);
+            }
         }
     }
 }

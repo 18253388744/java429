@@ -99,7 +99,7 @@
     <!-- 轮播banner图模块 -->
 <section class="banner-slide" data-report-module="banner">
 
-    <div class="mod-entry">
+    <div class="mod-entry" id="no" style="display: none">
         <div class="mod-entry-user mod-entry-user--unlogin visible" id="js-mod-entry-index">
             <div class="mod-entry-user-hover mod-entry-nologin">
                 <p class="mod-entry-nologin-tips" style="margin-bottom: 15px;">欢迎登录</p>
@@ -128,17 +128,17 @@
             </div>
         </div>
     </div>
-    <div class="mod-entry" style="display: block">
+    <div class="mod-entry" id="yes" style="display: none">
         <div class="mod-entry-user mod-entry-user--unlogin visible" id="js-mod-entry-index">
             <div class="mod-entry-user-hover mod-entry-nologin">
-                <p class="mod-entry-nologin-tips" style="margin-bottom: 15px;">欢迎您，<a href="#">孙海翔</a></p>
+                <p class="mod-entry-nologin-tips" style="margin-bottom: 15px;">欢迎您，<a href="#" id="name"></a></p>
                 <div class="login-box">
                     <div class="login_inner">
                         <h1></h1>
                         <br>
                         <a href="//ke.qq.com/user/index/index.html" report-attr="module=class_schedule&amp;position=card" class="mod-entry-user-schedule"> <i class="icon-font i-calendar-2"></i>我的信息 </a>
                         <br>
-                        <a class="mod-entry-user-logout js-login-op" href="indexservlet?do=exit">退出登陆</a>
+                        <a class="mod-entry-user-logout js-login-op" href="user/user?do=exit">退出登陆</a>
 
                     </div>
                 </div>
@@ -813,8 +813,11 @@
                 url:'indexservlet?do=dl',
                 methods:'post',
                 success:function (data1) {
-                    if (data1!=""){
-
+                    if (data1!="0"){
+                        document.getElementById("name").innerHTML=data1;
+                        document.getElementById("yes").style.display = 'block';
+                    }else {
+                        document.getElementById("no").style.display = 'block';
                     }
                 },error:function (data1) {
                     layer.msg('数据获取失败');

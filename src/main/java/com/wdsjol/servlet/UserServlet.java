@@ -23,11 +23,10 @@ public class UserServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String dos = request.getParameter("do");
         PrintWriter out = response.getWriter();
         ApplicationContext app = new AnnotationConfigApplicationContext(SpringConfig.class);
         UserServiceImpl bean = app.getBean(UserServiceImpl.class);
-        if ("add".equals(dos)){
+        if ("add".equals(request.getParameter("do"))){
             String phone = request.getParameter("phone");
             String mima = request.getParameter("mima");
             String username = request.getParameter("username");
@@ -35,7 +34,7 @@ public class UserServlet extends HttpServlet {
             String data = request.getParameter("data");
 
             out.print(bean.add(phone,mima,username,sex,data));
-        }else if ("dl".equals(dos)){
+        }else if ("dl".equals(request.getParameter("do"))){
             String phone = request.getParameter("phone");
             String mima = request.getParameter("mima");
             User user = bean.dl(phone,mima);
@@ -46,6 +45,11 @@ public class UserServlet extends HttpServlet {
             }else {
                 out.print(0);
             }
+        }else if ("exit".equals(request.getParameter("do"))) {
+            HttpSession session = request.getSession();
+            session.removeAttribute("user");
+            String contextPath = request.getContextPath();
+            response.sendRedirect(contextPath+"/index.html");
         }
     }
 }
