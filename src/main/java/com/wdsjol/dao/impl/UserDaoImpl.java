@@ -17,16 +17,17 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public int add(User user) {
-        return jdbcTemplate.update("insert into user  (phone,mima,data ) values (?,?,? )",
-                user.getPhone(),user.getMima(),user.getData());
+        return jdbcTemplate.update("insert into user  (phone,mima,username,sex,data ) values (?,?,?,?,? )",
+               user.getPhone(),user.getMima(),user.getUsername(),user.getSex(),user.getData());
     }
 
     @Override
     public int update(User user) {
-        return jdbcTemplate.update("UPDATE  user  SET phone=?,mima=?,data=?"
+        return jdbcTemplate.update("UPDATE  user  SET phone=?,mima=?,username=?,sex=?,data=?"
                         +" where id=?",
-                user.getPhone(),user.getMima(),user.getData(),
-                user.getId());
+                user.getPhone(),user.getMima(),user.getUsername(),user.getSex(),user.getData(),
+                user.getId())
+                ;
     }
 
     @Override
