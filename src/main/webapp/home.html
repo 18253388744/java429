@@ -24,14 +24,15 @@
 	<link rel="stylesheet" href="css/gj.css">
 	<link rel="stylesheet" href="layuiadmin/layui/css/layui.css" media="all">
 	<link href="css/common_css_247dfdb7.css" rel="stylesheet" onerror="__retryPlugin.call(this,event)" onload="__retryPlugin.call(this,event)"><link href="css/7_88db9836.css" rel="stylesheet" onerror="__retryPlugin.call(this,event)" onload="__retryPlugin.call(this,event)"><link href="css/index.live_0b8a79f9.css" rel="stylesheet" onerror="__retryPlugin.call(this,event)" onload="__retryPlugin.call(this,event)">
+
 </head>
 <body class="l-aside-left l-min">
 <header class="header-index" id="js_main_nav">
 	<div class="header-index-inner clearfix">
-		<a href="https://ke.qq.com" class="header-index-logo js-header-index-logo" report-tdw="action=rainbow-logo-clk" title="腾讯课堂_专业的在线教育平台"></a>
+		<a href="#" class="header-index-logo js-header-index-logo" report-tdw="action=rainbow-logo-clk" title="腾讯课堂_专业的在线教育平台"></a>
 		<div class="header-index-category js-header-index-category header-index-category__show" report-hover="obj1=cates">
 			<div class="header-index-category-text"><i class="icon-font i-list-index"></i
-				<a href="https://ke.qq.com/course/list" target="_blank" title="分类">主页</a>
+				<a href="#" target="_blank" title="分类">主页</a>
 			</div>
 		</div>
 
@@ -118,36 +119,18 @@
 	<section class="inner-center clearfix">
 		<aside class="aside-left">
 			<div class="l-nav-area">
-				<ul class="l-nav">
-					<li class="l-nav-item">
-						<a title="课程表" href="#/plan" class="active" aria-current="page">课程表</a>
+				<ul class="l-nav" >
+					<li class="l-nav-item" >
+						<a title="个人信息" style="border-left-color: #23b8ff" href="#/plan" aria-current="page">个人信息</a>
 					</li>
 					<li class="l-nav-item">
-						<a title="畅学卡" href="#/free_learning">畅学卡</a>
+						<a title="每日签到" style="border-left-color: #23b8ff" href="javascript:;" onclick="kj('home/qd.html')">每日签到</a>
 					</li>
 					<li class="l-nav-item">
-						<a title="全部订单" href="#/signup">全部订单</a>
+						<a title="优惠券" style="border-left-color: #23b8ff" href="#/coupon">优惠券</a>
 					</li>
 					<li class="l-nav-item">
-						<a title="分期付款" href="#/instalment">分期付款</a>
-					</li>
-					<li class="l-nav-item">
-						<a title="收藏" href="#/fav">收藏</a>
-					</li>
-					<li class="l-nav-item">
-						<a title="优惠券" href="#/coupon">优惠券</a>
-					</li>
-					<li class="l-nav-item">
-						<a title="我的余额" href="#/balance">我的余额</a>
-					</li>
-					<li class="l-nav-item">
-						<a title="课程分销" href="#/distribution">课程分销</a>
-					</li>
-					<li class="l-nav-item">
-						<a title="个人信息" href="#/contact">个人信息</a>
-					</li>
-					<li class="l-nav-item">
-						<a title="课程兑换" href="#/course_exchange">课程兑换</a>
+						<a title="课程兑换" style="border-left-color: #23b8ff" href="#/course_exchange">课程兑换</a>
 					</li>
 				</ul>
 			</div>
@@ -173,5 +156,10 @@
 	<p>429宿舍</p>
 	<p></p>
 </footer>
+<script>
+	function kj(url) {
+		document.getElementById('kj').src=url;
+	}
+</script>
 </body>
 </html>
