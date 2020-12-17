@@ -22,6 +22,42 @@
 
 
 <script src="./javascript/jquery-1.10.2.min.js"></script>
-<script src="./javascript/qiandao_js.js"></script>
+<script>
+    $(function(){
+        var c=function(){
+            var n=[1,2,4,6];//2 4 5 7
+            var f=$("#js-qiandao-list")
+                ,e=$(".current-date")
+                ,h=$("#js-just-qiandao")
+                ,l=""
+                ,k=true
+                ,r=new Date();
+            e.text(r.getFullYear()+"年"+parseInt(r.getMonth()+1)+"月"+r.getDate()+"日");
+            var q=new Date(r.getFullYear(),parseInt(r.getMonth()),1).getDay();
+            var m=new Date(r.getFullYear(),parseInt(r.getMonth()+1),0);
+            var u=m.getDate();
+            for(var o=0;o<42;o++){
+                l+=' <li><div class="qiandao-icon"></div></li>'
+            }f.html(l);
+            var g=f.find("li");
+            for(var o=0;o<u;o++){
+                g.eq(o+q).addClass("date"+parseInt(o+1));
+                for(var p=0;p<n.length;p++){
+                    if(o==n[p]){
+                        g.eq(o+q).addClass("qiandao")
+                    }
+                }
+            }
+            $(".date"+r.getDate()).addClass("able-qiandao");
+            f.on("click","li",function(){if($(this).hasClass("able-qiandao")&&k){$(this).addClass("qiandao");
+            t()}});
+            h.on("click",function(){if(k){t()}});
+            function t(){h.addClass("actived");b("qiandao-active",s);
+            k=false}function s(){$(".date"+r.getDate()).addClass("qiandao")}}();
+        function b(d,e){$("."+d).fadeIn(e)}var a=function(){$("body").on("click",".close-qiandao-layer",function(){$(this).parents(".qiandao-layer").fadeOut()})}();$("#js-qiandao-history").on("click",function(){b("qiandao-history-layer",d);
+                function d(){console.log(1)}}
+            )});
+
+</script>
 </body>
 </html>
