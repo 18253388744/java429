@@ -47,6 +47,7 @@ com\wdsjol\service\impl\StudentListServiceImpl.class
 com\wdsjol\dao\UserDao.class
 com\wdsjol\service\LoginService.class
 com\wdsjol\servlet\admin\AdminInfoServlet.class
+com\wdsjol\config\JDBCUtils.class
 com\wdsjol\dao\impl\UserTypeDaoImpl.class
 com\wdsjol\dao\impl\TeacherUserDaoImpl.class
 com\wdsjol\servlet\ZyCzServlet.class
