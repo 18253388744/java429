@@ -6,6 +6,7 @@ com\wdsjol\servlet\TestServlet.class
 com\wdsjol\servlet\UserServlet.class
 com\wdsjol\dao\impl\ClassDaoImpl.class
 com\wdsjol\service\impl\ZyCzServiceImpl.class
+com\wdsjol\dao\impl\QDDaoImpl.class
 com\wdsjol\dao\impl\ZyDaoImpl.class
 com\wdsjol\service\TestService.class
 com\wdsjol\dto\AdminInfoDto.class
@@ -19,10 +20,12 @@ com\wdsjol\service\UserService.class
 com\wdsjol\servlet\admin\AdminExitServlet.class
 com\wdsjol\service\impl\LoginServiceImpl.class
 com\wdsjol\dao\StudentUserDAO.class
+com\wdsjol\service\impl\QDServiceImpl.class
 com\wdsjol\entity\Sex.class
 com\wdsjol\service\SetPasswordService.class
 com\wdsjol\dao\SexDao.class
 com\wdsjol\dao\ZyDao.class
+com\wdsjol\dao\QDDao.class
 com\wdsjol\entity\admin\AdminUser.class
 com\wdsjol\config\JdbcTConfig.class
 com\wdsjol\config\JdbcConfig.class
@@ -38,6 +41,7 @@ com\wdsjol\service\ZyCzService.class
 com\wdsjol\servlet\AdminFilter.class
 com\wdsjol\servlet\StuCzServlet.class
 com\wdsjol\dao\TeacherUserDAO.class
+com\wdsjol\servlet\home\QDServlet.class
 com\wdsjol\service\impl\ClassCzServiceImpl.class
 com\wdsjol\servlet\admin\AdminLoginServlet.class
 com\wdsjol\service\impl\StuCzServiceImpl.class
@@ -46,6 +50,7 @@ com\wdsjol\service\ClassCzService.class
 com\wdsjol\service\impl\StudentListServiceImpl.class
 com\wdsjol\dao\UserDao.class
 com\wdsjol\service\LoginService.class
+com\wdsjol\entity\QD.class
 com\wdsjol\servlet\admin\AdminInfoServlet.class
 com\wdsjol\config\JDBCUtils.class
 com\wdsjol\dao\impl\UserTypeDaoImpl.class
@@ -58,4 +63,5 @@ com\wdsjol\dao\impl\AdminUserDaoImpl.class
 com\wdsjol\entity\Classs.class
 com\wdsjol\dao\impl\SexDaoImpl.class
 com\wdsjol\service\impl\AdminInfoServiceImpl.class
+com\wdsjol\service\QDService.class
 com\wdsjol\servlet\ClassCzServlet.class
