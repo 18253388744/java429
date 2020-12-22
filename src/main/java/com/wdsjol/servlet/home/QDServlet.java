@@ -27,10 +27,9 @@ public class QDServlet extends HttpServlet {
         ApplicationContext app = new AnnotationConfigApplicationContext(SpringConfig.class);
         QDServiceImpl qd = app.getBean(QDServiceImpl.class);
         if ("info".equals( request.getParameter("do"))){
-
             out.print(qd.getInfo("18253388744"));
         }else if ("qd".equals( request.getParameter("do"))){
-
+            out.print(qd.qd("18253388744"));
         }
     }
 }

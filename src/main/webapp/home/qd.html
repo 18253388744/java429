@@ -12,7 +12,7 @@
             <div class="qiandao-left">
                 <div class="qiandao-left-top clear">
                     <div class="current-date">2018年1月6日</div>
-                    <div class="qiandao-history qiandao-tran qiandao-radius" id="js-qiandao-history">立即签到</div>
+                    <div class="qiandao-history qiandao-tran qiandao-radius" onclick="qd()" id="qd">立即签到</div>
                 </div>
                 <div class="qiandao-main" id="js-qiandao-main">
                     <ul class="qiandao-list" id="js-qiandao-list"></ul>
@@ -24,7 +24,7 @@
 <script src="./javascript/jquery-1.10.2.min.js"></script>
 <script>
     $(function(){
-        var n=[];//2 4 5 7
+        var n=[];
         $.ajax({
             url:'qd?do=info',
             methods:'post',
@@ -71,6 +71,17 @@
         });
 
     });
+    function qd() {
+        $.ajax({
+            url:'qd?do=qd',
+            methods:'post',
+            success:function (data1) {
+                alert(data1)
+            },error:function (data1) {
+                alert("错误")
+            }
+        });
+    }
 
 </script>
 </body>

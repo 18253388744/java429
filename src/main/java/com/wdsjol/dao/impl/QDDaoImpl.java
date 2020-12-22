@@ -25,7 +25,9 @@ public class QDDaoImpl implements QDDao {
     }
 
     @Override
-    public int qd(String phone, String day) {
-        return 0;
+    public int qd(String phone, int day) {
+        String days ="a"+day;
+        String sql = "UPDATE `qd` SET "+days+"='1' WHERE phone= ?";
+        return jdbcTemplate.update(sql,phone);
     }
 }

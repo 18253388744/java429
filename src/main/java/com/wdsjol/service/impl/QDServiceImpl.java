@@ -7,6 +7,8 @@ import com.wdsjol.service.QDService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Calendar;
+
 @Service
 public class QDServiceImpl implements QDService {
     @Autowired
@@ -17,8 +19,6 @@ public class QDServiceImpl implements QDService {
     public String getInfo(String phone) {
        QD qd =  qdDao.getInfo(phone);
        if (qd!=null){
-           //return qd.toString();
-//           Qday(qd.getA1(),1);
            return qd.hqday();
 
        }
@@ -27,14 +27,10 @@ public class QDServiceImpl implements QDService {
 
     @Override
     public int qd(String phone) {
-        return 0;
+        int day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
+        day = day - 1;
+        qdDao.qd(phone,day);
+        return day;
     }
-    public int Qday(int a,int x){
-        if (a==1){
-            return x;
-        }else {
-            return 0;
-        }
 
-    }
 }
