@@ -12,7 +12,7 @@
     <div class="wrapper-bd">
         <div class="contact-box contact-box-mobile">
             <div class="contact-box-hd"><h2>昵称</h2>
-                <a href="javascript:;">修改</a>
+                <a href="javascript:;" onclick="xg('name')">修改</a>
             </div>
             <div class="contact-box-bd">
                 <span class="num" id="name"> </span>
@@ -31,7 +31,7 @@
         <div class="contact-box contact-box-mobile">
             <div class="contact-box-hd">
                 <h2>手机号码</h2>
-                <a href="javascript:;">修改</a>
+                <a href="javascript:;" onclick="xg('phone')">修改</a>
             </div><div class="contact-box-bd">
             <span class="num" id="phone"> </span>
             <hr>
@@ -39,7 +39,7 @@
             <div class="contact-box contact-box-mobile">
                 <div class="contact-box-hd">
                     <h2>密码</h2>
-                    <a href="javascript:;">修改</a>
+                    <a href="javascript:;" onclick="xg('mima')">修改</a>
                 </div><div class="contact-box-bd">
                 <span class="num">**********</span>
                 <hr>
@@ -64,6 +64,27 @@
                 }
             });
         })
+        function xg(x) {
+            if (x=="name") {
+                layer.prompt({title: '修改姓名', formType: 0}
+                    , function (text, index) {
+                        layer.close(index);
+                        layer.msg('姓名修改为：' + text);
+                    });
+
+            }
+            if (x=="mima") {
+                layer.prompt({title: '修改密码', formType: 0}
+                    , function (text, index) {
+                        layer.close(index);
+                        layer.msg('密码修改为：' + text);
+                    });
+
+            }
+            if (x=="phone") {
+                layer.msg('手机号暂时无法修改');
+            }
+        }
     </script>
 </body>
 </html>
