@@ -21,6 +21,7 @@ E:\java429\src\main\java\com\wdsjol\entity\User.java
 E:\java429\src\main\java\com\wdsjol\entity\Zy.java
 E:\java429\src\main\java\com\wdsjol\servlet\IndexServlet.java
 E:\java429\src\main\java\com\wdsjol\config\SpringConfig.java
+E:\java429\src\main\java\com\wdsjol\service\HomeInfoService.java
 E:\java429\src\main\java\com\wdsjol\servlet\StudentListServlet.java
 E:\java429\src\main\java\com\wdsjol\dto\LayuiJson.java
 E:\java429\src\main\java\com\wdsjol\servlet\TestServlet.java
@@ -33,6 +34,7 @@ E:\java429\src\main\java\com\wdsjol\dao\ZyDao.java
 E:\java429\src\main\java\com\wdsjol\dao\impl\SexDaoImpl.java
 E:\java429\src\main\java\com\wdsjol\dao\impl\AdminUserDaoImpl.java
 E:\java429\src\main\java\com\wdsjol\servlet\admin\AdminInfoServlet.java
+E:\java429\src\main\java\com\wdsjol\entity\QD.java
 E:\java429\src\main\java\com\wdsjol\service\ZyCzService.java
 E:\java429\src\main\java\com\wdsjol\service\ClassCzService.java
 E:\java429\src\main\java\com\wdsjol\config\JDBCUtils.java
@@ -44,6 +46,7 @@ E:\java429\src\main\java\com\wdsjol\servlet\ZyCzServlet.java
 E:\java429\src\main\java\com\wdsjol\service\LoginService.java
 E:\java429\src\main\java\com\wdsjol\service\TestService.java
 E:\java429\src\main\java\com\wdsjol\config\JdbcTConfig.java
+E:\java429\src\main\java\com\wdsjol\dao\QDDao.java
 E:\java429\src\main\java\com\wdsjol\service\impl\StuCzServiceImpl.java
 E:\java429\src\main\java\com\wdsjol\servlet\ClassCzServlet.java
 E:\java429\src\main\java\com\wdsjol\entity\Classs.java
@@ -51,8 +54,11 @@ E:\java429\src\main\java\com\wdsjol\dao\SexDao.java
 E:\java429\src\main\java\com\wdsjol\dao\impl\StudentUserDAOImpl.java
 E:\java429\src\main\java\com\wdsjol\service\StuCzService.java
 E:\java429\src\main\java\com\wdsjol\service\impl\StudentListServiceImpl.java
+E:\java429\src\main\java\com\wdsjol\dao\impl\QDDaoImpl.java
+E:\java429\src\main\java\com\wdsjol\service\impl\QDServiceImpl.java
 E:\java429\src\main\java\com\wdsjol\servlet\AdminFilter.java
 E:\java429\src\main\java\com\wdsjol\service\impl\AdminInfoServiceImpl.java
+E:\java429\src\main\java\com\wdsjol\service\QDService.java
 E:\java429\src\main\java\com\wdsjol\dao\impl\UserDaoImpl.java
 E:\java429\src\main\java\com\wdsjol\servlet\home\QDServlet.java
 E:\java429\src\main\java\com\wdsjol\service\impl\UserServiceImpl.java
@@ -60,3 +66,5 @@ E:\java429\src\main\java\com\wdsjol\dao\ClasssDao.java
 E:\java429\src\main\java\com\wdsjol\config\JdbcConfig.java
 E:\java429\src\main\java\com\wdsjol\service\AdminInfoService.java
 E:\java429\src\main\java\com\wdsjol\service\impl\ZyCzServiceImpl.java
+E:\java429\src\main\java\com\wdsjol\service\impl\HomeInfoServiceImpl.java
+E:\java429\src\main\java\com\wdsjol\servlet\home\InfoServlet.java

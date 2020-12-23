@@ -30,7 +30,7 @@ public class InfoServlet extends HttpServlet {
         ApplicationContext app = new AnnotationConfigApplicationContext(SpringConfig.class);
         HomeInfoServiceImpl info = app.getBean(HomeInfoServiceImpl.class);
         if ("info".equals( request.getParameter("do"))){
-            out.print(info.getInfo(user.));
+            out.print(info.getInfo(user.getPhone()));
         }else if ("qd".equals( request.getParameter("do"))){
 
         }

@@ -33,7 +33,7 @@
                 <h2>手机号码</h2>
                 <a href="javascript:;">修改</a>
             </div><div class="contact-box-bd">
-            <span class="num"> </span>
+            <span class="num" id="phone"> </span>
             <hr>
         </div>
             <div class="contact-box contact-box-mobile">
@@ -56,7 +56,9 @@
                 url:'info?do=info',
                 methods:'post',
                 success:function (data1) {
-                    alert(data1)
+                    obj = JSON.parse(data1);
+                    document.getElementById('name').innerHTML=obj.username;
+                    document.getElementById('phone').innerHTML=obj.phone;
                 },error:function (data1) {
                     layer.msg('错误');
                 }

@@ -9,6 +9,7 @@ com\wdsjol\service\impl\ZyCzServiceImpl.class
 com\wdsjol\dao\impl\QDDaoImpl.class
 com\wdsjol\dao\impl\ZyDaoImpl.class
 com\wdsjol\service\TestService.class
+com\wdsjol\servlet\home\InfoServlet.class
 com\wdsjol\dto\AdminInfoDto.class
 com\wdsjol\servlet\IndexServlet.class
 com\wdsjol\dto\StudentListDto.class
@@ -18,6 +19,7 @@ com\wdsjol\dto\LayuiJson.class
 com\wdsjol\service\impl\UserServiceImpl.class
 com\wdsjol\service\UserService.class
 com\wdsjol\servlet\admin\AdminExitServlet.class
+com\wdsjol\service\impl\HomeInfoServiceImpl.class
 com\wdsjol\service\impl\LoginServiceImpl.class
 com\wdsjol\dao\StudentUserDAO.class
 com\wdsjol\service\impl\QDServiceImpl.class
@@ -33,6 +35,7 @@ com\wdsjol\dao\AdminUserDao.class
 com\wdsjol\servlet\admin\AdminSetPasswordServlet.class
 com\wdsjol\service\AdminInfoService.class
 com\wdsjol\config\SpringConfig.class
+com\wdsjol\service\HomeInfoService.class
 com\wdsjol\dao\UserTypeDAO.class
 com\wdsjol\entity\StudentUser.class
 com\wdsjol\entity\UserType.class
