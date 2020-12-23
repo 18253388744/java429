@@ -20,6 +20,7 @@ public class QDDaoImpl implements QDDao {
             QD qd = qdList.get(0);
             return qd;
         }else{
+            newQd(phone);   //新建用户签到
             return null;
         }
     }
@@ -30,4 +31,9 @@ public class QDDaoImpl implements QDDao {
         String sql = "UPDATE `qd` SET "+days+"='1' WHERE phone= ?";
         return jdbcTemplate.update(sql,phone);
     }
+    public int newQd(String phone) {
+        String sql = "INSERT INTO `qd` (`phone`) VALUES (?)";
+        return jdbcTemplate.update(sql,phone);
+    }
+
 }

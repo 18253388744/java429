@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0534b74b-155b-490e-ba84-1279d089ff50" name="Default Changelist" comment="增加签到功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wdsjol/dao/QDDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wdsjol/dao/QDDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wdsjol/dao/impl/QDDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wdsjol/dao/impl/QDDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wdsjol/service/impl/QDServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wdsjol/service/impl/QDServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wdsjol/servlet/home/QDServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wdsjol/servlet/home/QDServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/home/qd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home/qd.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +79,8 @@
       <workItem from="1608109295909" duration="21380000" />
       <workItem from="1608169183280" duration="6774000" />
       <workItem from="1608346324258" duration="872000" />
-      <workItem from="1608595650585" duration="11343000" />
+      <workItem from="1608595650585" duration="11380000" />
+      <workItem from="1608689725727" duration="1154000" />
     </task>
     <task id="LOCAL-00001" summary="轮播图">
       <created>1608109530644</created>
@@ -349,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608606802743</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="增加签到功能">
+      <created>1608607795883</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1608607795883</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,10 +437,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608124761929" />
-    <state x="448" y="10" key="CommitChangelistDialog2" timestamp="1608606933760">
+    <state x="448" y="10" key="CommitChangelistDialog2" timestamp="1608690632986">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="448" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608606933760" />
+    <state x="448" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1608690632986" />
     <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1608133830332" />
     <state x="74" y="73" width="1228" height="685" key="DiffContextDialog" timestamp="1608346431463">
       <screen x="0" y="0" width="1536" height="824" />
@@ -445,25 +451,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="760" y="404" width="273" height="219" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608110981392" />
-    <state width="1493" height="267" key="GridCell.Tab.0.bottom" timestamp="1608607436378">
+    <state width="1493" height="267" key="GridCell.Tab.0.bottom" timestamp="1608690726711">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608607436378" />
+    <state width="1493" height="267" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608690726711" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608130809176" />
-    <state width="1493" height="267" key="GridCell.Tab.0.center" timestamp="1608607436378">
+    <state width="1493" height="267" key="GridCell.Tab.0.center" timestamp="1608690726711">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608607436378" />
+    <state width="1493" height="267" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608690726711" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608130809176" />
-    <state width="1493" height="267" key="GridCell.Tab.0.left" timestamp="1608607436378">
+    <state width="1493" height="267" key="GridCell.Tab.0.left" timestamp="1608690726711">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608607436378" />
+    <state width="1493" height="267" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608690726711" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608130809176" />
-    <state width="1493" height="267" key="GridCell.Tab.0.right" timestamp="1608607436378">
+    <state width="1493" height="267" key="GridCell.Tab.0.right" timestamp="1608690726711">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="267" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608607436378" />
+    <state width="1493" height="267" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608690726711" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608130809176" />
     <state x="479" y="128" key="MultipleFileMergeDialog" timestamp="1608346438526">
       <screen x="0" y="0" width="1536" height="824" />
@@ -486,19 +492,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="623" y="328" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1608346423350" />
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1608606812216">
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2" timestamp="1608607814543">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608606812216" />
+    <state x="442" y="200" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608607814543" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608133842441" />
-    <state x="467" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1608595674783">
+    <state x="467" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1608689725953">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1608595674783" />
-    <state x="602" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608606931110">
+    <state x="467" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1608689725953" />
+    <state x="602" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608689739864">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="602" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608606931110" />
+    <state x="602" y="346" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608689739864" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608113306006" />
     <state x="467" y="204" key="git4idea.merge.GitPullDialog" timestamp="1608346344106">
       <screen x="0" y="0" width="1536" height="824" />
@@ -508,10 +514,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="334" y="92" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1608126861259" />
-    <state x="493" y="190" width="672" height="537" key="run.anything.popup" timestamp="1608607436393">
+    <state x="493" y="190" width="672" height="537" key="run.anything.popup" timestamp="1608690636009">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="493" y="190" width="672" height="537" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608607436393" />
+    <state x="493" y="190" width="672" height="537" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1608690636009" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608130809195" />
   </component>
 </project>

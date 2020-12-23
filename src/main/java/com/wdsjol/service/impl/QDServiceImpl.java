@@ -20,7 +20,6 @@ public class QDServiceImpl implements QDService {
        QD qd =  qdDao.getInfo(phone);
        if (qd!=null){
            return qd.hqday();
-
        }
         return "";
     }
@@ -28,9 +27,7 @@ public class QDServiceImpl implements QDService {
     @Override
     public int qd(String phone) {
         int day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
-        day = day - 1;
-        qdDao.qd(phone,day);
-        return day;
+        return qdDao.qd(phone,day);
     }
 
 }
