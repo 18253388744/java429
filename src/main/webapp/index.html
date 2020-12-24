@@ -195,7 +195,7 @@
             <div class="custom-course-bd">
                 <div class="custom-course-list">
                     
-                    <ul class="course-card-list" auto-test>
+                    <ul class="course-card-list" id="zhuye" auto-test>
     
     <li class="course-card-item--v3 js-course-card-item " data-report-position="1">
 
@@ -635,46 +635,20 @@
     </li>
 
     <li class="course-card-item--v3 js-course-card-item " data-report-position="10">
-
         <a href="javascript:" class="item-img-link " data-id="431228" data-ispkg="0" data-index="10" data-taskid data-aid data-teacherid cors-name="course">
-            
             <img src="images/356_7.jpeg" alt="Java系统架构师/JavaSE 零基础快速掌握Java开发" title="Java系统架构师/JavaSE 零基础快速掌握Java开发" class="item-img" width="220" height="124" onerror="window.__eduCourseCardRetry__ && __eduCourseCardRetry__.call(this)">
-            
-            
             <div class="item-status">
-                
             </div>
-            
         </a>
-        
         <h4 class="item-tt ">
-            
-            
             <a href="javascript:" class="item-tt-link js-course-name" data-hit="0" cors-name="course" title="Java系统架构师/JavaSE 零基础快速掌握Java开发">Java系统架构师/JavaSE 零基础快速掌握Java开发</a>
         </h4>
-
-
-        
-
-        
-        
         <div class="item-line item-line--middle">
-            
             <span class="line-cell item-task">进度：5/5节</span>
-            
-
-            
-                <a href="javascript:" class="line-cell item-source-link js-agency-name " style="max-width: 133px;" CARD_WIDTH title="软帝学院" rel="nofollow" data-hit="0" data-aid="56093">软帝学院</a>
-            
-           
-            
-            
+            <a href="javascript:" class="line-cell item-source-link js-agency-name " style="max-width: 133px;" CARD_WIDTH title="软帝学院" rel="nofollow" data-hit="0" data-aid="56093">软帝学院</a>
         </div>
-        
             <div class="item-line item-line--bottom">
-                
                 <span class="line-cell item-price  ">免费</span>
-                
                 <span class="line-cell item-user ">
                     1663人最近报名
             </span>
@@ -803,8 +777,39 @@
         
         <p></p>
 </footer>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="layuiadmin/layui/layui.js"></script>
     <script src="js/gj.js"></script>
+    <script>
+        $(function(){
+            for(j = 0; j < 10; j++) {
+                selectID = document.getElementById("zhuye");
+                li = document.createElement("li");// 创建option元素
+                li.setAttribute("class","course-card-item--v3 js-course-card-item");
+                //li.appendChild(document.createTextNode("j"));
+                li.innerHTML="<a href=\"javascript:\" class=\"item-img-link \" data-id=\"431228\" data-ispkg=\"0\" data-index=\"10\" data-taskid data-aid data-teacherid cors-name=\"course\">\n" +
+                    "            <img src=\"images/356_7.jpeg\" alt=\"Java系统架构师/JavaSE 零基础快速掌握Java开发\" title=\"Java系统架构师/JavaSE 零基础快速掌握Java开发\" class=\"item-img\" width=\"220\" height=\"124\" onerror=\"window.__eduCourseCardRetry__ && __eduCourseCardRetry__.call(this)\">\n" +
+                    "            <div class=\"item-status\">\n" +
+                    "            </div>\n" +
+                    "        </a>\n" +
+                    "        <h4 class=\"item-tt \">\n" +
+                    "            <a href=\"javascript:\" class=\"item-tt-link js-course-name\" data-hit=\"0\" cors-name=\"course\" title=\"Java系统架构师/JavaSE 零基础快速掌握Java开发\">课程显示测试"+j+"</a>\n" +
+                    "        </h4>\n" +
+                    "        <div class=\"item-line item-line--middle\">\n" +
+                    "            <span class=\"line-cell item-task\">进度：5/5节</span>\n" +
+                    "            <a href=\"javascript:\" class=\"line-cell item-source-link js-agency-name \" style=\"max-width: 133px;\" CARD_WIDTH title=\"软帝学院\" rel=\"nofollow\" data-hit=\"0\" data-aid=\"56093\">软帝学院</a>\n" +
+                    "        </div>\n" +
+                    "            <div class=\"item-line item-line--bottom\">\n" +
+                    "                <span class=\"line-cell item-price  \">免费</span>\n" +
+                    "                <span class=\"line-cell item-user \">\n" +
+                    "                    1663人最近报名\n" +
+                    "            </span>\n" +
+                    "        </div>";
+                selectID.appendChild(li);
+            }
+        })
+
+    </script>
     <script>
         layui.use(['carousel'], function(){
             var $ = layui.$;
